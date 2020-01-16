@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<!-- 搜索框 -->
+<searchInput></searchInput>
+<!-- 轮播图 -->
+<view>
+  <swiper class="slideShow" indicator-dots="{{true}}" autoplay="{{true}}">
+    <swiper-item wx:for='{{slideShow}}' wx:key='*this'>
+      <!-- <navigator src='{{item.navigator_url}}'> -->
+        <image class="img" src="{{item.image_src}}"></image>
+      <!-- </navigator> -->
+    </swiper-item>
+  </swiper>
+</view>
+
+<!-- 导航条 -->
+
